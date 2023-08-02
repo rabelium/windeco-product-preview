@@ -44,10 +44,10 @@ export const ViewerComponent = forwardRef(
         </Suspense>
         <Sky distance={450000} sunPosition={[0, 1, 0]} inclination={0} azimuth={0.25} />
         <OrbitControls
-          minAzimuthAngle={showBehind ? -Infinity : -Math.PI / 4}
-          maxAzimuthAngle={showBehind ? Infinity : Math.PI / 4}
-          maxPolarAngle={Math.PI - Math.PI / 3}
-          minPolarAngle={Math.PI / 3}
+          minAzimuthAngle={showBehind ? -Infinity : -Math.PI / 4.5}
+          maxAzimuthAngle={showBehind ? Infinity : Math.PI / 4.5}
+          maxPolarAngle={Math.PI - Math.PI / 2.5}
+          minPolarAngle={Math.PI / 2.5}
           enabled={!isLoading}
           ref={controls}
           makeDefault
